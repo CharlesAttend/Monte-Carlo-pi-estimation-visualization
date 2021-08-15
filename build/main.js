@@ -14,7 +14,7 @@ window.addEventListener('load', () => {
 	let lopper = setInterval(() => { createWatterDrop(true) }, Math.abs(Number(speed.value)));
 
 	// add more ieration withour displaying them (too lagy)
-	nbInput.value = 1000;
+	nbInput.value = 10000;
 	nbInputButton.onclick = () => {
 		let add = Number(nbInput.value);
 		if((typeof add) == "number"){
