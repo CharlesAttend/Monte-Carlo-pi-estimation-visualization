@@ -6,7 +6,7 @@
     <title>Monte Carlo</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
-    <script src='main.js'></script>
+    <script src='main.js' async></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
 </head>
 <body class="h-screen w-screen p-0 m-0">
@@ -14,11 +14,11 @@
     <div id="canevas" class="h-90 bg-red"></div>
 
     <!-- Control Bar -->
-    <div id="control" class="flex items-center justify-evenly flex-wrap  h-10 bg-orange">
+    <div class="flex items-center justify-evenly flex-wrap  h-10 bg-orange">
         <!-- Speed control -->
         <div class="flex items-center flex-col mx-0.5 md:mx-5">
             <span class="p-1">Speed :</span>
-            <input type="range" min="1" max="100" value="10" class="" id="slider">
+            <input type="range" min="-100" max="-0.001" value="-1000" class="" id="slider">
         </div>
 
         <!-- Start Button
@@ -27,16 +27,16 @@
         </div> -->
 
         <!-- Number of iteration -->
-        <div class="flex items-center mx-0.5 md:mx-5 p-1 bg-gray-200 rounded-md border border-yellow">
-            n=5000
+        <div class="flex items-center flex-col mx-0.5 md:mx-5">
+            <span class="p-1"><strong>n</strong></span>
+            <div id="iter" class="flex items-center mx-0.5 md:mx-5 p-1 bg-gray-200 rounded-md"></div>
         </div>
-        
+
         <!-- Pi Result -->
-        <div class="flex items-center mx-0.5 md:mx-5 p-1 bg-gray-200 rounded-md">
-            pi = 3.1415
+        <div class="flex items-center flex-col mx-0.5 md:mx-5">
+            <span class="p-1"><strong>π</strong></span>
+            <span id="pi" class="flex items-center mx-0.5 md:mx-5 p-1 bg-gray-200 rounded-md"></span>
         </div>
-
-
     </div>
 </body>
 </html>
