@@ -12,9 +12,9 @@ module.exports = {
       colors: {
         "dark_blue": "#264653",
         "light_blue": "#2A9D8F",
-        "red": "#E76F51",
-        "orange": "#E9C46A",
-        "yellow": "#F4A261"
+        "yellow": "#E9C46A",
+        "orange": "#F4A261",
+        "red": "#E76F51"
       }
     }
   },
